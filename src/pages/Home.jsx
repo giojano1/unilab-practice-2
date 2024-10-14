@@ -13,8 +13,8 @@ const Home = () => {
   const targetDate = "2024-10-31T23:59:59";
   return (
     <>
-      <div className="bg ">
-        <div className="bgImg max-w-[1440px] mx-auto w-full  max-h-[700px] max-800:max-h-max ">
+      <div className="bg">
+        <div className="bg-hero bg-cover max-w-[1440px] mx-auto w-full  max-h-[700px] max-800:max-h-max ">
           <Header />
           <Hero />
         </div>

@@ -66,6 +66,11 @@ export default {
         "bold-8": ["8px", { fontWeight: "700" }],
         "semibold-8": ["8px", { fontWeight: "600" }],
       },
+      backgroundImage: {
+        hero: "url('/assets/images/bg.webp')",
+        ad1: "url('/assets/images/ad.png')",
+        ad2: "url('/assets/images/ad2.png')",
+      },
     },
   },
   plugins: [],

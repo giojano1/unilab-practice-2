@@ -10,23 +10,11 @@
   @apply max-w-[1200px] mx-auto w-full px-5 max-500:px-4;
 }
 .bg {
-  background: rgb(252, 238, 213);
+  background: #fceed5;
   background: linear-gradient(
     140deg,
     rgba(252, 238, 213, 1) 6%,
     rgba(252, 238, 213, 1) 75%,
     rgba(255, 231, 186, 1) 100%
   );
-}
-.bgImg {
-  background-image: url("/assets/images/bg.webp");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.bg2Img {
-  background-image: url("/assets/images/ad.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-
-  background-position: right;
 }

@@ -4,6 +4,7 @@ export { default as ukFlag } from "/assets/images/uk.webp";
 export { default as geFlag } from "/assets/images/ge.png";
 export { default as heroImg } from "/assets/images/hero.png";
 export { default as hero2Img } from "/assets/images/hero2.png";
+export { default as hero3Img } from "/assets/images/hero3.png";
 export { default as adImg } from "/assets/images/ad.png";
-
 export { default as playIcon } from "/assets/icons/play.png";
+export { default as play2Icon } from "/assets/icons/play2.png";

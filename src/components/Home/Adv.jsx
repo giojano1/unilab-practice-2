@@ -6,7 +6,7 @@ import { useTranslation } from "react-i18next";
 const Adv = () => {
   const { t } = useTranslation();
   return (
-    <div className="flex items-center justify-between  bg-primary rounded-[20px] bg2Img  px-10 max-800:flex-col-reverse max-800:pt-10  max-500:px-4">
+    <div className="flex items-center justify-between  bg-primary rounded-[20px] bg-ad1 bg-cover bg-right  px-10 max-800:flex-col-reverse max-800:pt-10  max-500:px-4">
       <img
         src={hero2Img}
         alt="adv"
