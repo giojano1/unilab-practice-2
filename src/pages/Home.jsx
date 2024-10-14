@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import Header from "../components/Global/Header";
 import Hero from "../components/Home/Hero";
+import { DogShopContext } from "../context/DogShopContext";
+
 const Home = () => {
+  const { data, loading, error } = useContext(DogShopContext);
+
   return (
     <>
       <div className="bg ">
