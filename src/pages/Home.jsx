@@ -6,6 +6,7 @@ import Adv from "../components/Home/Adv";
 import { DogShopContext } from "../context/DogShopContext";
 import InfoSlider from "../components/Home/InfoSlider";
 import Countdown from "../components/Home/Countdown";
+import Footer from "../components/Global/Footer";
 
 const Home = () => {
   const { data, loading, error } = useContext(DogShopContext);
@@ -32,6 +33,7 @@ const Home = () => {
           <Countdown endingDate={targetDate} />
         </section>
       </main>
+      <Footer />
     </>
   );
 };

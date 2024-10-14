@@ -38,3 +38,21 @@ export const usefulInfo = [
     img: "/assets/dogs/32.png",
   },
 ];
+export const socialLinks = [
+  {
+    id: 1,
+    icon: "/assets/icons/fb.svg",
+  },
+  {
+    id: 2,
+    icon: "/assets/icons/tw.svg",
+  },
+  {
+    id: 3,
+    icon: "/assets/icons/ig.svg",
+  },
+  {
+    id: 4,
+    icon: "/assets/icons/yt.svg",
+  },
+];
