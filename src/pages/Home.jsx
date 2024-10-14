@@ -1,6 +1,8 @@
 import React, { useContext } from "react";
 import Header from "../components/Global/Header";
 import Hero from "../components/Home/Hero";
+import DogList from "../components/Home/DogList";
+import ButtonLarge from "../components/Global/ButtonLarge";
 import { DogShopContext } from "../context/DogShopContext";
 
 const Home = () => {
@@ -14,7 +16,11 @@ const Home = () => {
           <Hero />
         </div>
       </div>
-      <main></main>
+      <main className="container">
+        <section className="my-16 max-700:my-10">
+          <DogList />
+        </section>
+      </main>
     </>
   );
 };
