@@ -4,9 +4,11 @@ import Hero from "../components/Home/Hero";
 const Home = () => {
   return (
     <>
-      <div>
-        <Header />
-        <Hero />
+      <div className="bg h-screen">
+        <div className="bgImg h-full">
+          <Header />
+          <Hero />
+        </div>
       </div>
       <main></main>
     </>

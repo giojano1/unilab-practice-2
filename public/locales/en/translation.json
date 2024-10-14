@@ -1,0 +1,162 @@
+{
+  "header": {
+    "li_1": "Home",
+    "li_2": "Wine",
+    "li_3": "Contact",
+    "li_4": "Green(Oaked)",
+    "li_5": "Red",
+    "li_6": "Amber",
+    "li_7": "Green",
+    "li_8": "Tap Wine"
+  },
+  "hero": {
+    "span": "8000 Year old Winemaking Heritage",
+    "h2_1": "A Wine That ",
+    "h2_2": "Narrates a Story to You",
+    "p": "Experience the essence of tradition and flavor in every glass.",
+    "button": "Learn More"
+  },
+  "cat": {
+    "span_1": "Mtsvane",
+    "span_2": "Rkatsiteli",
+    "span_3": "Saperavi"
+  },
+  "discover": {
+    "h2": "Discover",
+    "p": "Lasha vineyards",
+    "span_1": "7 vineyards",
+    "span_2": "10 varieties",
+    "span_3": "12 types of wine",
+    "span_4": "Alaverdi",
+    "span_5": "Kvareli",
+    "span_6": "Manavi",
+    "span_7": "Kardenakhi",
+    "span_8": "Sighnaghi",
+    "li_1": "Area: 10h",
+    "li_2": "Grapes : mtsvane , krkatsiteli",
+    "li_3": "Area: 10h",
+    "li_4": "Grapes : mtsvane , krkatsiteli",
+    "li_5": "Area: 10h",
+    "li_6": "Grapes : mtsvane , krkatsiteli",
+    "li_7": "Area: 10h",
+    "li_8": "Grapes : mtsvane , krkatsiteli",
+    "li_9": "Area: 10h",
+    "li_10": "Grapes : mtsvane , krkatsiteli"
+  },
+  "slider": {
+    "p": "The outstanding wine of Lasha'ss",
+    "h2": "Products",
+    "title": {
+      "1": "Green(Oaked)",
+      "2": "Red",
+      "3": "Amber",
+      "4": "Green",
+      "5": "Tap Wine"
+    },
+    "grape": {
+      "1": "Manavi Mtsvane",
+      "2": "Saperavi",
+      "3": "Rkatsiteli",
+      "4": "Manavi Mtsvane",
+      "5": "Manavi, Kikhvi, Tsarapi"
+    }
+  },
+  "shops": {
+    "p": "buy wine",
+    "h2": "Where to find our wine"
+  },
+  "footer": {
+    "span": "Contact",
+    "span_2": "Navigation",
+    "span_3": "Socials",
+    "li_1": "Tbilisi, v.gorgasali v Dead End #2",
+    "li_2": "Home",
+    "li_3": "Wine",
+    "li_4": "Contact",
+    "p": "All rights reserved "
+  },
+  "catalogue": {
+    "button_1": "All",
+    "button_2": "White",
+    "button_3": "Red",
+    "button_4": "Amber",
+    "title": {
+      "1": "Green(Oaked)",
+      "2": "Red",
+      "3": "Amber",
+      "4": "Green",
+      "5": "Tap Wine"
+    }
+  },
+  "contact": {
+    "li_1": "Tbilisi, v.gorgasali v Dead End #2",
+    "h2": "Contact Us",
+    "ph_1": "name",
+    "ph_2": "e-mail",
+    "ph_3": "message",
+    "button": "Send",
+    "span": "Message sent Successfully"
+  },
+  "product": {
+    "span_1": "Wine",
+    "p_1": "Wine",
+    "p_2": "Grape",
+    "p_3": "Location",
+    "p_4": "Alc",
+    "p_5": "Volume",
+    "p_6": "Price",
+
+    "wine": {
+      "1": {
+        "name": "Green",
+        "type": "Dry",
+        "grape": "Manavis Mtsvane",
+        "loc": "Manavi , Kakheti",
+        "desc": " დახვეწილი თეთრი მშრალი ღვინო , მანავის ბიო ვენახებიდან. დამზადებულია ცივი მაცერაციის პროცესით, ინახება 4°C ტემპერატურაზე 72 საათის განმავლობაში, რასაც მოყვება 3 თვე ლექზე დავარგება. ხასიათდება ნაზი თეთრი ხილის არომატით.",
+        "alc": "14%",
+        "vol": "750ml",
+        "price": "20GEL"
+      },
+      "2": {
+        "name": "Red",
+        "type": "Dry",
+        "grape": "Saperavi",
+        "loc": "Kvareli , Kakheti",
+        "desc": "კლასიკური წითელი მშრალი ღვინო, ყვარლის რეგიონიდან. 12 თვიანი დავარგებით მუხის კასრებში. Ხასიათდება სასიამოვნო ყვავილოვანი და წითელი კენკრის არომატით.",
+        "alc": "13.5%",
+        "vol": "750ml",
+        "price": "25GEL"
+      },
+      "3": {
+        "name": "Amber",
+        "type": "Dry",
+        "grape": "Rkatsiteli",
+        "loc": "Tsarapi , Kakheti",
+        "desc": "რქაწითელი წარაფის ბიო ვენახებიდან, გამორჩეული თეთრი მშრალი ღვინო. 6 თვიანი ქვევრში ჭაჭაზე დაყოვნებით, რაც მას ქარვისფერ შეფერილობას სძენს.  გამორჩეულია მისი ცოცხალი ხილისა და ჩირის არომატით.",
+        "alc": "13%",
+        "vol": "750ml",
+        "price": "15GEL"
+      },
+      "4": {
+        "name": "Green",
+        "type": "Dry",
+        "grape": "Manavis Mtsvane",
+        "loc": "Manavi , Kakheti",
+        "desc": "Კახური მწვანე მანავის ბიო ვენახებიდან, თეთრი მშრალი ღვინო. დამზადებულია ცივი მაცერაციის პროცესით, ინახება 4°C ტემპერატურაზე 72 საათის განმავლობაში , ხასიათდება თეთრი ხილის არომატით.",
+        "alc": "14%",
+        "vol": "750ml",
+        "price": "20GEL"
+      },
+      "5": {
+        "name": "Tap Wine",
+        "type": "Dry",
+        "grape": "Mtsvane, Khikhvi, Tsarapi",
+        "loc": "Kakheti",
+        "desc": "გამოსცადეთ ჩვენი ჩამოსასხმელი ღვინის ელეგანტურობა, რომელიც გთავაზობთ ახალ შეგრძნებებს ყოველი ჭიქით. ჩვენი ღვინო იძლევა განსაკუთრებულ არომატს და მოხერხებულობას, რაც მას იდეალურ არჩევანად აქცევს ნებისმიერი შემთხვევისთვის.",
+        "alc": "13%-14%",
+        "vol": "1000ml",
+        "price": "8-10GEL"
+      }
+    }
+  }
+}

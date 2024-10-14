@@ -4,3 +4,20 @@
 #root {
   font-family: Arial, Helvetica, sans-serif;
 }
+.container {
+  @apply max-w-[1200px] mx-auto w-full px-5;
+}
+.bg {
+  background: rgb(252, 238, 213);
+  background: linear-gradient(
+    140deg,
+    rgba(252, 238, 213, 1) 6%,
+    rgba(252, 238, 213, 1) 75%,
+    rgba(255, 231, 186, 1) 100%
+  );
+}
+.bgImg {
+  background-image: url("/images/bg.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
