@@ -4,7 +4,6 @@ import { DogShopContext } from "../../context/DogShopContext";
 const DogGrid = ({ limit }) => {
   const { data, loading, error } = useContext(DogShopContext);
   const limitedData = data.slice(0, limit);
-  console.log(limitedData);
 
   return (
     <>

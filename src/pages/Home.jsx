@@ -4,6 +4,7 @@ import Hero from "../components/Home/Hero";
 import DogList from "../components/Home/DogList";
 import Adv from "../components/Home/Adv";
 import { DogShopContext } from "../context/DogShopContext";
+import InfoSlider from "../components/Home/InfoSlider";
 
 const Home = () => {
   const { data, loading, error } = useContext(DogShopContext);
@@ -22,6 +23,9 @@ const Home = () => {
         </section>
         <section className="my-16 max-700:my-10 ">
           <Adv />
+        </section>
+        <section className="my-16 max-700:my-10 ">
+          <InfoSlider />
         </section>
       </main>
     </>
