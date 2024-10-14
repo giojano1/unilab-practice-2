@@ -8,12 +8,12 @@ const Header = () => {
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
   };
-  const { t } = useTranslation();
+
   const [showLang, setShowLang] = useState(false);
   const [lang, setLang] = useState("EN");
   return (
-    <header className="h-[100px] flex items-center">
-      <div className="container flex justify-between items-center">
+    <header className="h-[100px] flex items-center ">
+      <div className="flex justify-between items-center container">
         <div className="flex items-center">
           <div className="flex flex-col items-center">
             <img
@@ -39,7 +39,7 @@ const Header = () => {
               </li>
               <li>
                 <Link to="/contact" className="text-bold-16 text-primary">
-                  contact
+                  Contact
                 </Link>
               </li>
             </ul>
@@ -65,10 +65,10 @@ const Header = () => {
           </button>
 
           {showLang && (
-            <div className="absolute top-[40px] right-0 flex flex-col items-start bg-primary text-white text-bold-14  w-16 p-2 rounded-md">
+            <div className="absolute top-[40px] right-0 flex gap-1 flex-col items-start bg-primary text-white text-bold-14  w-16 p-2 rounded-md">
               <button
                 onClick={() => {
-                  changeLanguage("ge");
+                  changeLanguage("ka");
                   setLang("GE");
                   setShowLang(false);
                 }}
