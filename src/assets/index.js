@@ -3,4 +3,7 @@ export { default as arrowDownIcon } from "/assets/icons/arrowDown.svg";
 export { default as ukFlag } from "/assets/images/uk.webp";
 export { default as geFlag } from "/assets/images/ge.png";
 export { default as heroImg } from "/assets/images/hero.png";
+export { default as hero2Img } from "/assets/images/hero2.png";
+export { default as adImg } from "/assets/images/ad.png";
+
 export { default as playIcon } from "/assets/icons/play.png";

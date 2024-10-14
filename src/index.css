@@ -19,7 +19,14 @@
   );
 }
 .bgImg {
-  background-image: url("/images/bg.webp");
+  background-image: url("/assets/images/bg.webp");
   background-size: cover;
   background-repeat: no-repeat;
+}
+.bg2Img {
+  background-image: url("/assets/images/ad.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  background-position: right;
 }

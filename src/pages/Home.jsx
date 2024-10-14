@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import Header from "../components/Global/Header";
 import Hero from "../components/Home/Hero";
 import DogList from "../components/Home/DogList";
-import ButtonLarge from "../components/Global/ButtonLarge";
+import Adv from "../components/Home/Adv";
 import { DogShopContext } from "../context/DogShopContext";
 
 const Home = () => {
@@ -19,6 +19,9 @@ const Home = () => {
       <main className="container">
         <section className="my-16 max-700:my-10">
           <DogList />
+        </section>
+        <section className="my-16 max-700:my-10 ">
+          <Adv />
         </section>
       </main>
     </>
