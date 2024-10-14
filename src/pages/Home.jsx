@@ -5,10 +5,11 @@ import DogList from "../components/Home/DogList";
 import Adv from "../components/Home/Adv";
 import { DogShopContext } from "../context/DogShopContext";
 import InfoSlider from "../components/Home/InfoSlider";
+import Countdown from "../components/Home/Countdown";
 
 const Home = () => {
   const { data, loading, error } = useContext(DogShopContext);
-
+  const targetDate = "2024-10-31T23:59:59";
   return (
     <>
       <div className="bg ">
@@ -26,6 +27,9 @@ const Home = () => {
         </section>
         <section className="my-16 max-700:my-10 ">
           <InfoSlider />
+        </section>
+        <section className="my-16 max-700:my-10 ">
+          <Countdown endingDate={targetDate} />
         </section>
       </main>
     </>
