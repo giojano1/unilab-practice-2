@@ -1,14 +1,15 @@
 import React from "react";
-
+import { useNavigate } from "react-router-dom";
 const DogGrid = ({ data, limit }) => {
   const limitedData = data.slice(0, limit);
-
+  const navigate = useNavigate();
   return (
     <>
       {limitedData.map((dog) => (
         <div
           key={dog.id}
-          className="bg-white rounded-xl p-2 h-[378px] shadow max-1000:h-[317px]  "
+          className="bg-white rounded-xl p-2 h-[378px] shadow max-1000:h-[317px] cursor-pointer"
+          onClick={() => navigate(`/dog/${dog.id}`)}
         >
           <div>
             <img

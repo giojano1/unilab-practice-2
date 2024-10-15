@@ -18,3 +18,8 @@
     rgba(255, 231, 186, 1) 100%
   );
 }
+.text-truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

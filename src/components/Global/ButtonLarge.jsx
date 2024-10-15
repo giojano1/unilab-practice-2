@@ -1,6 +1,6 @@
 import React from "react";
 
-const ButtonLarge = ({ title, variant, children, width, h, func }) => {
+const ButtonLarge = ({ title, variant, children, width, h, func, icon }) => {
   return (
     <button
       className={`bg-primary h-11 px-7  text-white text-medium-16 rounded-[57px] ${
@@ -17,7 +17,7 @@ const ButtonLarge = ({ title, variant, children, width, h, func }) => {
     }, ${
         h === "2" &&
         "h-8 !text-medium-14 !border-neutral60 !text-neutral60 w-full flex justify-center"
-      }`}
+      }, ${icon === "l" && "flex-row-reverse"}`}
       onClick={func}
     >
       {title}

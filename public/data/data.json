@@ -16,7 +16,8 @@
     "publishedDate": "12-Oct-2022",
     "additionalInfo": "Pure breed Shih Tzu. Good body structure. With MKA cert and Microchip. Father from champion lineage.",
     "popularity": 4,
-    "colorOptions": ["red"]
+    "colorOptions": ["red"],
+    "sku": 100001
   },
   {
     "id": 2,
@@ -35,7 +36,8 @@
     "publishedDate": "05-Sep-2022",
     "additionalInfo": "Well-tempered and great with kids. Champion bloodline.",
     "popularity": 2,
-    "colorOptions": ["tan"]
+    "colorOptions": ["tan"],
+    "sku": 100002
   },
   {
     "id": 3,
@@ -54,7 +56,8 @@
     "publishedDate": "15-Sep-2022",
     "additionalInfo": "Short, stocky, and healthy. A bundle of joy!",
     "popularity": 9,
-    "colorOptions": ["black&white"]
+    "colorOptions": ["black&white"],
+    "sku": 100003
   },
   {
     "id": 4,
@@ -73,7 +76,8 @@
     "publishedDate": "10-Aug-2022",
     "additionalInfo": "Friendly and intelligent. Ideal for families.",
     "popularity": 3,
-    "colorOptions": ["tan"]
+    "colorOptions": ["tan"],
+    "sku": 100004
   },
   {
     "id": 5,
@@ -92,7 +96,8 @@
     "publishedDate": "25-Jul-2022",
     "additionalInfo": "Friendly and great for outdoor activities.",
     "popularity": 6,
-    "colorOptions": ["apricot"]
+    "colorOptions": ["apricot"],
+    "sku": 100005
   },
   {
     "id": 6,
@@ -111,7 +116,8 @@
     "publishedDate": "20-Aug-2022",
     "additionalInfo": "Loyal and protective. Great guard dog.",
     "popularity": 10,
-    "colorOptions": ["tan"]
+    "colorOptions": ["tan"],
+    "sku": 100006
   },
   {
     "id": 7,
@@ -130,7 +136,8 @@
     "publishedDate": "22-Sep-2022",
     "additionalInfo": "Curious and playful. Great scent tracker.",
     "popularity": 7,
-    "colorOptions": ["apricot"]
+    "colorOptions": ["apricot"],
+    "sku": 100051
   },
   {
     "id": 8,
@@ -149,7 +156,8 @@
     "publishedDate": "01-Jan-2022",
     "additionalInfo": "Sample additional information for dog 8.",
     "popularity": 4,
-    "colorOptions": ["red"]
+    "colorOptions": ["red"],
+    "sku": 100007
   },
   {
     "id": 9,
@@ -168,7 +176,8 @@
     "publishedDate": "01-Jan-2023",
     "additionalInfo": "Sample additional information for dog 9.",
     "popularity": 5,
-    "colorOptions": ["apricot"]
+    "colorOptions": ["apricot"],
+    "sku": 100008
   },
   {
     "id": 10,
@@ -187,7 +196,8 @@
     "publishedDate": "01-Jan-2022",
     "additionalInfo": "Sample additional information for dog 10.",
     "popularity": 7,
-    "colorOptions": ["black"]
+    "colorOptions": ["black"],
+    "sku": 1000009
   },
   {
     "id": 11,
@@ -206,7 +216,8 @@
     "publishedDate": "01-Jan-2023",
     "additionalInfo": "Sample additional information for dog 11.",
     "popularity": 6,
-    "colorOptions": ["black"]
+    "colorOptions": ["black"],
+    "sku": 100010
   },
   {
     "id": 12,
@@ -225,7 +236,8 @@
     "publishedDate": "01-Jan-2022",
     "additionalInfo": "Sample additional information for dog 12.",
     "popularity": 9,
-    "colorOptions": ["silver"]
+    "colorOptions": ["silver"],
+    "sku": 100011
   },
   {
     "id": 13,
@@ -244,7 +256,8 @@
     "publishedDate": "01-Jan-2023",
     "additionalInfo": "Sample additional information for dog 13.",
     "popularity": 8,
-    "colorOptions": ["black&white"]
+    "colorOptions": ["black&white"],
+    "sku": 100012
   },
   {
     "id": 14,
@@ -263,7 +276,8 @@
     "publishedDate": "01-Jan-2022",
     "additionalInfo": "Sample additional information for dog 14.",
     "popularity": 5,
-    "colorOptions": ["tan"]
+    "colorOptions": ["tan"],
+    "sku": 100013
   },
   {
     "id": 15,
@@ -282,7 +296,8 @@
     "publishedDate": "01-Jan-2023",
     "additionalInfo": "Sample additional information for dog 15.",
     "popularity": 10,
-    "colorOptions": ["tan"]
+    "colorOptions": ["tan"],
+    "sku": 100014
   },
   {
     "id": 16,
@@ -301,7 +316,8 @@
     "publishedDate": "01-Jan-2022",
     "additionalInfo": "Sample additional information for dog 16.",
     "popularity": 4,
-    "colorOptions": ["red"]
+    "colorOptions": ["red"],
+    "sku": 100015
   },
   {
     "id": 17,
@@ -320,7 +336,8 @@
     "publishedDate": "01-Jan-2023",
     "additionalInfo": "Sample additional information for dog 17.",
     "popularity": 1,
-    "colorOptions": ["black"]
+    "colorOptions": ["black"],
+    "sku": 100050
   },
   {
     "id": 18,
@@ -339,7 +356,8 @@
     "publishedDate": "01-Jan-2022",
     "additionalInfo": "Sample additional information for dog 18.",
     "popularity": 8,
-    "colorOptions": ["black&white"]
+    "colorOptions": ["black&white"],
+    "sku": 100016
   },
   {
     "id": 19,
@@ -358,7 +376,8 @@
     "publishedDate": "01-Jan-2023",
     "additionalInfo": "Sample additional information for dog 19.",
     "popularity": 8,
-    "colorOptions": ["red"]
+    "colorOptions": ["red"],
+    "sku": 100017
   },
   {
     "id": 20,
@@ -377,7 +396,8 @@
     "publishedDate": "01-Jan-2022",
     "additionalInfo": "Sample additional information for dog 20.",
     "popularity": 1,
-    "colorOptions": ["apricot"]
+    "colorOptions": ["apricot"],
+    "sku": 100018
   },
   {
     "id": 21,
@@ -396,7 +416,8 @@
     "publishedDate": "01-Jan-2023",
     "additionalInfo": "Sample additional information for dog 21.",
     "popularity": 9,
-    "colorOptions": ["silver"]
+    "colorOptions": ["silver"],
+    "sku": 100049
   },
   {
     "id": 22,
@@ -415,7 +436,8 @@
     "publishedDate": "01-Jan-2022",
     "additionalInfo": "Sample additional information for dog 22.",
     "popularity": 6,
-    "colorOptions": ["tan"]
+    "colorOptions": ["tan"],
+    "sku": 100019
   },
   {
     "id": 23,
@@ -434,7 +456,8 @@
     "publishedDate": "01-Jan-2023",
     "additionalInfo": "Sample additional information for dog 23.",
     "popularity": 3,
-    "colorOptions": ["silver"]
+    "colorOptions": ["silver"],
+    "sku": 100048
   },
   {
     "id": 24,
@@ -453,7 +476,8 @@
     "publishedDate": "01-Jan-2022",
     "additionalInfo": "Sample additional information for dog 24.",
     "popularity": 8,
-    "colorOptions": ["red"]
+    "colorOptions": ["red"],
+    "sku": 100020
   },
   {
     "id": 25,
@@ -472,7 +496,8 @@
     "publishedDate": "01-Jan-2023",
     "additionalInfo": "Sample additional information for dog 25.",
     "popularity": 5,
-    "colorOptions": ["tan"]
+    "colorOptions": ["tan"],
+    "sku": 100021
   },
   {
     "id": 26,
@@ -491,7 +516,8 @@
     "publishedDate": "01-Jan-2022",
     "additionalInfo": "Sample additional information for dog 26.",
     "popularity": 2,
-    "colorOptions": ["tan"]
+    "colorOptions": ["tan"],
+    "sku": 100047
   },
   {
     "id": 27,
@@ -510,7 +536,8 @@
     "publishedDate": "01-Jan-2023",
     "additionalInfo": "Sample additional information for dog 27.",
     "popularity": 4,
-    "colorOptions": ["silver"]
+    "colorOptions": ["silver"],
+    "sku": 100022
   },
   {
     "id": 28,
@@ -529,7 +556,8 @@
     "publishedDate": "01-Jan-2022",
     "additionalInfo": "Sample additional information for dog 28.",
     "popularity": 9,
-    "colorOptions": ["tan"]
+    "colorOptions": ["tan"],
+    "sku": 100046
   },
   {
     "id": 29,
@@ -548,7 +576,8 @@
     "publishedDate": "01-Jan-2023",
     "additionalInfo": "Sample additional information for dog 29.",
     "popularity": 10,
-    "colorOptions": ["tan"]
+    "colorOptions": ["tan"],
+    "sku": 100023
   },
   {
     "id": 30,
@@ -567,7 +596,8 @@
     "publishedDate": "01-Jan-2022",
     "additionalInfo": "Sample additional information for dog 30.",
     "popularity": 9,
-    "colorOptions": ["silver"]
+    "colorOptions": ["silver"],
+    "sku": 100024
   },
   {
     "id": 31,
@@ -586,7 +616,8 @@
     "publishedDate": "01-Jan-2023",
     "additionalInfo": "Sample additional information for dog 31.",
     "popularity": 7,
-    "colorOptions": ["black&white"]
+    "colorOptions": ["black&white"],
+    "sku": 100025
   },
   {
     "id": 32,
@@ -605,7 +636,8 @@
     "publishedDate": "01-Jan-2022",
     "additionalInfo": "Sample additional information for dog 32.",
     "popularity": 7,
-    "colorOptions": ["tan"]
+    "colorOptions": ["tan"],
+    "sku": 100026
   },
   {
     "id": 33,
@@ -624,7 +656,8 @@
     "publishedDate": "01-Jan-2023",
     "additionalInfo": "Sample additional information for dog 33.",
     "popularity": 5,
-    "colorOptions": ["black&white"]
+    "colorOptions": ["black&white"],
+    "sku": 100027
   },
   {
     "id": 34,
@@ -643,7 +676,8 @@
     "publishedDate": "01-Jan-2022",
     "additionalInfo": "Sample additional information for dog 34.",
     "popularity": 6,
-    "colorOptions": ["tan"]
+    "colorOptions": ["tan"],
+    "sku": 100028
   },
   {
     "id": 35,
@@ -662,7 +696,8 @@
     "publishedDate": "01-Jan-2023",
     "additionalInfo": "Sample additional information for dog 35.",
     "popularity": 3,
-    "colorOptions": ["black"]
+    "colorOptions": ["black"],
+    "sku": 100029
   },
   {
     "id": 36,
@@ -681,7 +716,8 @@
     "publishedDate": "01-Jan-2022",
     "additionalInfo": "Sample additional information for dog 36.",
     "popularity": 3,
-    "colorOptions": ["black"]
+    "colorOptions": ["black"],
+    "sku": 100030
   },
   {
     "id": 37,
@@ -700,7 +736,8 @@
     "publishedDate": "01-Jan-2023",
     "additionalInfo": "Sample additional information for dog 37.",
     "popularity": 4,
-    "colorOptions": ["silver"]
+    "colorOptions": ["silver"],
+    "sku": 100044
   },
   {
     "id": 38,
@@ -719,7 +756,8 @@
     "publishedDate": "01-Jan-2022",
     "additionalInfo": "Sample additional information for dog 38.",
     "popularity": 8,
-    "colorOptions": ["apricot"]
+    "colorOptions": ["apricot"],
+    "sku": 100031
   },
   {
     "id": 39,
@@ -738,7 +776,8 @@
     "publishedDate": "01-Jan-2023",
     "additionalInfo": "Sample additional information for dog 39.",
     "popularity": 6,
-    "colorOptions": ["apricot"]
+    "colorOptions": ["apricot"],
+    "sku": 100032
   },
   {
     "id": 40,
@@ -757,7 +796,8 @@
     "publishedDate": "01-Jan-2022",
     "additionalInfo": "Sample additional information for dog 40.",
     "popularity": 10,
-    "colorOptions": ["silver"]
+    "colorOptions": ["silver"],
+    "sku": 100033
   },
   {
     "id": 41,
@@ -776,7 +816,8 @@
     "publishedDate": "01-Jan-2023",
     "additionalInfo": "Sample additional information for dog 41.",
     "popularity": 8,
-    "colorOptions": ["black"]
+    "colorOptions": ["black"],
+    "sku": 100034
   },
   {
     "id": 42,
@@ -795,7 +836,8 @@
     "publishedDate": "01-Jan-2022",
     "additionalInfo": "Sample additional information for dog 42.",
     "popularity": 3,
-    "colorOptions": ["black&white"]
+    "colorOptions": ["black&white"],
+    "sku": 100035
   },
   {
     "id": 43,
@@ -814,7 +856,8 @@
     "publishedDate": "01-Jan-2023",
     "additionalInfo": "Sample additional information for dog 43.",
     "popularity": 10,
-    "colorOptions": ["tan"]
+    "colorOptions": ["tan"],
+    "sku": 100036
   },
   {
     "id": 44,
@@ -833,7 +876,8 @@
     "publishedDate": "01-Jan-2022",
     "additionalInfo": "Sample additional information for dog 44.",
     "popularity": 2,
-    "colorOptions": ["tan"]
+    "colorOptions": ["tan"],
+    "sku": 100037
   },
   {
     "id": 45,
@@ -852,7 +896,8 @@
     "publishedDate": "01-Jan-2023",
     "additionalInfo": "Sample additional information for dog 45.",
     "popularity": 6,
-    "colorOptions": ["red"]
+    "colorOptions": ["red"],
+    "sku": 100038
   },
   {
     "id": 46,
@@ -871,7 +916,8 @@
     "publishedDate": "01-Jan-2022",
     "additionalInfo": "Sample additional information for dog 46.",
     "popularity": 9,
-    "colorOptions": ["tan"]
+    "colorOptions": ["tan"],
+    "sku": 100039
   },
   {
     "id": 47,
@@ -890,7 +936,8 @@
     "publishedDate": "01-Jan-2023",
     "additionalInfo": "Sample additional information for dog 47.",
     "popularity": 6,
-    "colorOptions": ["tan"]
+    "colorOptions": ["tan"],
+    "sku": 100043
   },
   {
     "id": 48,
@@ -909,7 +956,8 @@
     "publishedDate": "01-Jan-2022",
     "additionalInfo": "Sample additional information for dog 48.",
     "popularity": 5,
-    "colorOptions": ["black"]
+    "colorOptions": ["black"],
+    "sku": 100040
   },
   {
     "id": 49,
@@ -928,7 +976,8 @@
     "publishedDate": "01-Jan-2023",
     "additionalInfo": "Sample additional information for dog 49.",
     "popularity": 7,
-    "colorOptions": ["apricot"]
+    "colorOptions": ["apricot"],
+    "sku": 100041
   },
   {
     "id": 50,
@@ -947,6 +996,7 @@
     "publishedDate": "01-Jan-2022",
     "additionalInfo": "Sample additional information for dog 50.",
     "popularity": 6,
-    "colorOptions": ["silver"]
+    "colorOptions": ["silver"],
+    "sku": 100042
   }
 ]

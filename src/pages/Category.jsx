@@ -8,6 +8,7 @@ import { DogShopContext } from "../context/DogShopContext";
 import { arrowDownIcon } from "../assets";
 import { Link } from "react-router-dom";
 import Pagination from "../components/Category/Pagination";
+import Footer from "../components/Global/Footer";
 const Category = () => {
   const { currentData } = useContext(DogShopContext);
 
@@ -42,6 +43,7 @@ const Category = () => {
           </div>
         </section>
       </main>
+      <Footer />
     </>
   );
 };
