@@ -10,9 +10,11 @@ export const DogShopProvider = ({ children }) => {
     price: { min: "", max: "" },
     size: [],
   });
-
+  const [sortOption, setSortOption] = useState("default");
   return (
-    <DogShopContext.Provider value={{ data, loading, filters, setFilters }}>
+    <DogShopContext.Provider
+      value={{ data, loading, filters, setFilters, sortOption, setSortOption }}
+    >
       {children}
     </DogShopContext.Provider>
   );

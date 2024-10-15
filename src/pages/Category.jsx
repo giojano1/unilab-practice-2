@@ -8,8 +8,8 @@ import { DogShopContext } from "../context/DogShopContext";
 import { arrowDownIcon } from "../assets";
 import { Link } from "react-router-dom";
 const Category = () => {
-  const { data, filters } = useContext(DogShopContext);
-  const filteredData = data.filter((dog) => {
+  const { data, filters, sortOption } = useContext(DogShopContext);
+  let filteredData = data.filter((dog) => {
     const genderMatch =
       filters.gender.length === 0 || filters.gender.includes(dog.gender);
     const colorMatch =
@@ -22,7 +22,17 @@ const Category = () => {
 
     return genderMatch && colorMatch && sizeMatch && priceMatch;
   });
-
+  const sortData = (data) => {
+    if (sortOption === "priceLowToHigh") {
+      return [...data].sort((a, b) => a.price - b.price);
+    } else if (sortOption === "priceHighToLow") {
+      return [...data].sort((a, b) => b.price - a.price);
+    } else if (sortOption === "popularity") {
+      return [...data].sort((a, b) => b.popularity - a.popularity);
+    }
+    return data;
+  };
+  filteredData = sortData(filteredData);
   return (
     <>
       <Header />
