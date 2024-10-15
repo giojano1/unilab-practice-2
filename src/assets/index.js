@@ -8,3 +8,4 @@ export { default as hero3Img } from "/assets/images/hero3.png";
 export { default as adImg } from "/assets/images/ad.png";
 export { default as playIcon } from "/assets/icons/play.png";
 export { default as play2Icon } from "/assets/icons/play2.png";
+export { default as arrowL } from "/assets/icons/arrowL.svg";

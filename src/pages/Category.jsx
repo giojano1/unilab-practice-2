@@ -9,7 +9,7 @@ import { arrowDownIcon } from "../assets";
 import { Link } from "react-router-dom";
 import Pagination from "../components/Category/Pagination";
 const Category = () => {
-  const { filteredData } = useContext(DogShopContext);
+  const { currentData } = useContext(DogShopContext);
 
   return (
     <>
@@ -36,9 +36,9 @@ const Category = () => {
           <div className="ml-5 flex-1  w-full">
             <FilterHeader />
             <div className=" my-6 grid grid-cols-3 gap-5 max-900:grid-cols-3 max-700:grid-cols-2 max-700:gap-4 max-500:gap-3 ">
-              <DogGrid data={filteredData} limit={15} />
-              <Pagination data={filteredData} />
+              <DogGrid data={currentData} limit={15} />
             </div>
+            <Pagination limit={15} />
           </div>
         </section>
       </main>

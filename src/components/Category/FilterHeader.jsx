@@ -4,8 +4,8 @@ import { DogShopContext } from "../../context/DogShopContext";
 import { arrowDownIcon } from "../../assets";
 const FilterHeader = () => {
   const { data, setSortOption } = useContext(DogShopContext);
-  const [showFilter, setShowFilter] = useState(true);
-  const [option, setOption] = useState("");
+  const [showFilter, setShowFilter] = useState(false);
+  const [option, setOption] = useState("Default");
   const handleFilterToggle = () => {
     setShowFilter((prev) => !prev);
   };
@@ -20,7 +20,7 @@ const FilterHeader = () => {
         <h2 className="text-bold-24 text-primary">Dogs</h2>
         <span>{data.length} puppies</span>
       </div>
-      <div className="relative">
+      <div className="relative min-w-[160px]">
         <ButtonLarge
           title={option}
           variant="outline"

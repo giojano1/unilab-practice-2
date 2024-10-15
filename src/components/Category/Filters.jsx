@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { DogShopContext } from "../../context/DogShopContext";
 import { colorFilters, sizeFilters } from "../../constans";
 const Filters = () => {
-  const { filters, setFilters } = useContext(DogShopContext);
+  const { filters, setFilters, setCurrentPage } = useContext(DogShopContext);
   const handleCheckboxChange = (e) => {
     const { name, value, checked } = e.target;
     setFilters((prevFilters) => {
@@ -19,6 +19,7 @@ const Filters = () => {
         };
       }
     });
+    setCurrentPage(1);
   };
   const handlePriceChange = (e) => {
     const { name, value } = e.target;
@@ -26,6 +27,7 @@ const Filters = () => {
       ...prevFilters,
       price: { ...prevFilters.price, [name]: value },
     }));
+    setCurrentPage(1);
   };
   return (
     <section>

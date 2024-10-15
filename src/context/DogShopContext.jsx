@@ -12,8 +12,14 @@ export const DogShopProvider = ({ children }) => {
     size: [],
   });
   const [sortOption, setSortOption] = useState("default");
+  const [currentPage, setCurrentPage] = useState(1);
   const filteredData = useFilteredDogs(data, filters, sortOption);
-
+  const pageLimit = 15;
+  const totalPages = Math.ceil(filteredData.length / pageLimit);
+  const currentData = filteredData.slice(
+    (currentPage - 1) * pageLimit,
+    currentPage * pageLimit
+  );
   return (
     <DogShopContext.Provider
       value={{
@@ -24,6 +30,10 @@ export const DogShopProvider = ({ children }) => {
         sortOption,
         setSortOption,
         filteredData,
+        currentPage,
+        setCurrentPage,
+        totalPages,
+        currentData,
       }}
     >
       {children}
