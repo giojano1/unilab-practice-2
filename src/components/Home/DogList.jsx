@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
 import ButtonLarge from "../Global/ButtonLarge";
 import DogGrid from "../Global/DogGrid";
+import { DogShopContext } from "../../context/DogShopContext";
 import { arrowDownIcon } from "../../assets";
 const DogList = () => {
+  const { data } = useContext(DogShopContext);
   return (
     <div>
       <div
@@ -28,7 +30,7 @@ const DogList = () => {
         </div>
       </div>
       <div className="grid grid-cols-4 gap-5 my-7 max-900:grid-cols-3 max-700:grid-cols-2 max-700:gap-4 max-500:gap-3 max-700:my-4">
-        <DogGrid limit={8} />
+        <DogGrid data={data} limit={8} />
       </div>
       <div className="hidden max-700:block w-full">
         <ButtonLarge title="View More" variant="outline" width="full">

@@ -1,8 +1,6 @@
 import React, { useContext } from "react";
-import { DogShopContext } from "../../context/DogShopContext";
 
-const DogGrid = ({ limit }) => {
-  const { data, loading, error } = useContext(DogShopContext);
+const DogGrid = ({ data, limit }) => {
   const limitedData = data.slice(0, limit);
 
   return (

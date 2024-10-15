@@ -56,3 +56,46 @@ export const socialLinks = [
     icon: "/assets/icons/yt.svg",
   },
 ];
+export const colorFilters = [
+  {
+    name: "Red",
+    filter: "red",
+    style: "bg-pinkRed",
+  },
+  {
+    name: "Apircot",
+    filter: "apricot",
+    style: "bg-[#FFB672]",
+  },
+  {
+    name: "Black",
+    filter: "black",
+    style: "bg-neutral80",
+  },
+  {
+    name: "Black & White",
+    filter: "black&white",
+    style: "bg-gradient-to-r from-gray-900 to-gray-300",
+  },
+  {
+    name: "Silver",
+    filter: "silver",
+    style: "bg-[#CECECE]",
+  },
+  {
+    name: "Tan",
+    filter: "tan",
+    style: "bg-[#FFF7CE]",
+  },
+];
+export const sizeFilters = [
+  {
+    name: "Small",
+  },
+  {
+    name: "Medium",
+  },
+  {
+    name: "Large",
+  },
+];
