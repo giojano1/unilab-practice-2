@@ -7,6 +7,7 @@ import Filters from "../components/Category/Filters";
 import { DogShopContext } from "../context/DogShopContext";
 import { arrowDownIcon } from "../assets";
 import { Link } from "react-router-dom";
+import Pagination from "../components/Category/Pagination";
 const Category = () => {
   const { data, filters, sortOption } = useContext(DogShopContext);
   let filteredData = data.filter((dog) => {
@@ -59,6 +60,7 @@ const Category = () => {
             <FilterHeader />
             <div className=" my-6 grid grid-cols-3 gap-5 max-900:grid-cols-3 max-700:grid-cols-2 max-700:gap-4 max-500:gap-3 ">
               <DogGrid data={filteredData} limit={15} />
+              <Pagination data={filteredData} />
             </div>
           </div>
         </section>

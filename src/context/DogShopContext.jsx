@@ -11,6 +11,7 @@ export const DogShopProvider = ({ children }) => {
     size: [],
   });
   const [sortOption, setSortOption] = useState("default");
+  const [filteredData, setFilteredData] = useState([]);
   return (
     <DogShopContext.Provider
       value={{ data, loading, filters, setFilters, sortOption, setSortOption }}
