@@ -9,31 +9,8 @@ import { arrowDownIcon } from "../assets";
 import { Link } from "react-router-dom";
 import Pagination from "../components/Category/Pagination";
 const Category = () => {
-  const { data, filters, sortOption } = useContext(DogShopContext);
-  let filteredData = data.filter((dog) => {
-    const genderMatch =
-      filters.gender.length === 0 || filters.gender.includes(dog.gender);
-    const colorMatch =
-      filters.color.length === 0 || filters.color.includes(dog.color);
-    const sizeMatch =
-      filters.size.length === 0 || filters.size.includes(dog.size);
-    const priceMatch =
-      (filters.price.min === "" || dog.price >= filters.price.min) &&
-      (filters.price.max === "" || dog.price <= filters.price.max);
+  const { filteredData } = useContext(DogShopContext);
 
-    return genderMatch && colorMatch && sizeMatch && priceMatch;
-  });
-  const sortData = (data) => {
-    if (sortOption === "priceLowToHigh") {
-      return [...data].sort((a, b) => a.price - b.price);
-    } else if (sortOption === "priceHighToLow") {
-      return [...data].sort((a, b) => b.price - a.price);
-    } else if (sortOption === "popularity") {
-      return [...data].sort((a, b) => b.popularity - a.popularity);
-    }
-    return data;
-  };
-  filteredData = sortData(filteredData);
   return (
     <>
       <Header />

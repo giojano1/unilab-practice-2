@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React from "react";
 
 const DogGrid = ({ data, limit }) => {
   const limitedData = data.slice(0, limit);

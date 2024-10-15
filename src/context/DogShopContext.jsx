@@ -1,5 +1,6 @@
 import React, { createContext, useState } from "react";
 import useFetchDogs from "../hooks/useFetchDogs";
+import useFilteredDogs from "../hooks/useFilterDogs";
 export const DogShopContext = createContext();
 
 export const DogShopProvider = ({ children }) => {
@@ -11,10 +12,19 @@ export const DogShopProvider = ({ children }) => {
     size: [],
   });
   const [sortOption, setSortOption] = useState("default");
-  const [filteredData, setFilteredData] = useState([]);
+  const filteredData = useFilteredDogs(data, filters, sortOption);
+
   return (
     <DogShopContext.Provider
-      value={{ data, loading, filters, setFilters, sortOption, setSortOption }}
+      value={{
+        data,
+        loading,
+        filters,
+        setFilters,
+        sortOption,
+        setSortOption,
+        filteredData,
+      }}
     >
       {children}
     </DogShopContext.Provider>
