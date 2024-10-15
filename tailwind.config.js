@@ -7,6 +7,7 @@ export default {
         "max-1100": { max: "1100px" },
         "max-1050": { max: "1050px" },
         "max-1000": { max: "1000px" },
+        "max-950": { max: "950px" },
         "max-900": { max: "900px" },
         "max-850": { max: "850px" },
         "max-800": { max: "800px" },

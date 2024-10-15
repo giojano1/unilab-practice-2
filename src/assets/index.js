@@ -9,3 +9,4 @@ export { default as adImg } from "/assets/images/ad.png";
 export { default as playIcon } from "/assets/icons/play.png";
 export { default as play2Icon } from "/assets/icons/play2.png";
 export { default as arrowL } from "/assets/icons/arrowL.svg";
+export { default as filterIcon } from "/assets/icons/Filter.svg";
