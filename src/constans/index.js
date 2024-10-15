@@ -99,3 +99,37 @@ export const sizeFilters = [
     name: "Large",
   },
 ];
+export const customers = [
+  {
+    id: 1,
+    img: "/assets/images/customer1.png",
+  },
+  {
+    id: 2,
+    img: "/assets/images/customer2.png",
+  },
+  {
+    id: 3,
+    img: "/assets/images/customer3.png",
+  },
+  {
+    id: 4,
+    img: "/assets/images/customer4.png",
+  },
+  {
+    id: 5,
+    img: "/assets/images/customer1.png",
+  },
+  {
+    id: 6,
+    img: "/assets/images/customer2.png",
+  },
+  {
+    id: 7,
+    img: "/assets/images/customer3.png",
+  },
+  {
+    id: 8,
+    img: "/assets/images/customer4.png",
+  },
+];

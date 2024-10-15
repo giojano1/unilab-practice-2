@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { arrowDownIcon } from "../../assets";
 import { usefulInfo } from "../../constans/index";
