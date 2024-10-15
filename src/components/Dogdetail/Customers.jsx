@@ -6,7 +6,7 @@ import "swiper/css/pagination";
 
 const Customers = () => {
   return (
-    <div className="my-10">
+    <div className="my-20">
       <div className="my-4">
         <h2 className="text-bold-24 text-neutral100 ">Our lovely customer</h2>
       </div>
