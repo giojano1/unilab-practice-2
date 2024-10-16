@@ -4,7 +4,7 @@
 #root {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1;
-  @apply bg-neutral00;
+  @apply bg-neutral00 min-h-screen;
 }
 .container {
   @apply max-w-[1200px] mx-auto w-full px-5 max-500:px-4;
