@@ -17,3 +17,7 @@ export { default as dogdet2Icon } from "/assets/images/dogdet2.png";
 export { default as googleLogo } from "/assets/images/google.png";
 export { default as userIcon } from "/assets/icons/user.svg";
 export { default as logOutIcon } from "/assets/icons/log-out.svg";
+export { default as mapImg } from "/assets/images/map.png";
+export { default as phoneIcon } from "/assets/icons/phone.svg";
+export { default as faxIcon } from "/assets/icons/fax.svg";
+export { default as emailIcon } from "/assets/icons/email.svg";

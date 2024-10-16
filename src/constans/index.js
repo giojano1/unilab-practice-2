@@ -1,3 +1,4 @@
+import { phoneIcon, faxIcon, emailIcon } from "../assets";
 export const usefulInfo = [
   {
     id: 1,
@@ -131,5 +132,25 @@ export const customers = [
   {
     id: 8,
     img: "/assets/images/customer4.png",
+  },
+];
+export const contactForm = [
+  {
+    id: 1,
+    name: "PHONE",
+    icon: phoneIcon,
+    detail: "03 5432 1234",
+  },
+  {
+    id: 2,
+    name: "FAX",
+    icon: faxIcon,
+    detail: "03 5432 1234",
+  },
+  {
+    id: 3,
+    name: "EMAIL",
+    icon: emailIcon,
+    detail: "info@marcc.com.au",
   },
 ];

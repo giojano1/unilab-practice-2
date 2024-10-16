@@ -10,6 +10,7 @@ import DogDetail from "./pages/DogDetail";
 import SignIn from "./pages/SignIn";
 import Register from "./pages/Register";
 import Chat from "./pages/Chat";
+import Contact from "./pages/Contact";
 const App = () => {
   return (
     <DogShopProvider>
@@ -18,6 +19,8 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/category" element={<Category />} />
           <Route path="/dog/:id" element={<DogDetail />} />
+          <Route path="/contact" element={<Contact />} />
+
           <Route path="/login" element={<PublicRoutes component={SignIn} />} />
           <Route
             path="/register"
