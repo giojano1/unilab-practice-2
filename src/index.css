@@ -23,3 +23,11 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+.swiper-pagination-bullet {
+  @apply w-[9px] h-[9px] bg-gray-400;
+}
+
+.swiper-pagination-bullet-active {
+  @apply w-[22px] bg-primary rounded-[7.5px];
+}

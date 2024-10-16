@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { arrowDownIcon } from "../../assets";
 import { usefulInfo } from "../../constans/index";
 import "swiper/css";
 
 const InfoSlider = () => {
+  const swiperRef = useRef(null);
+
   return (
     <div>
       <div
@@ -20,14 +22,20 @@ const InfoSlider = () => {
           </h2>
         </div>
         <div className="flex items-center gap-5 max-650:hidden">
-          <button className="bg-transparent border border-primary !text-primary flex items-center h-11 px-7  text-medium-16 rounded-[57px] gap-2">
+          <button
+            onClick={() => swiperRef.current?.slidePrev()}
+            className="bg-transparent border border-primary !text-primary flex items-center h-11 px-7  text-medium-16 rounded-[57px] gap-2"
+          >
             <img
               src={arrowDownIcon}
               alt="arrow down"
               className="transform rotate-90"
             />
           </button>
-          <button className="bg-transparent border border-primary !text-primary flex items-center h-11 px-7  text-medium-16 rounded-[57px] gap-2">
+          <button
+            onClick={() => swiperRef.current?.slideNext()}
+            className="bg-transparent border border-primary !text-primary flex items-center h-11 px-7  text-medium-16 rounded-[57px] gap-2"
+          >
             <img
               src={arrowDownIcon}
               alt="arrow down"
@@ -38,6 +46,9 @@ const InfoSlider = () => {
       </div>
       <div className="my-5 max-650:my-1">
         <Swiper
+          onSwiper={(swiper) => {
+            swiperRef.current = swiper;
+          }}
           slidesPerView={1}
           spaceBetween={40}
           loop={true}
