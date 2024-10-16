@@ -1,15 +1,22 @@
-import React from "react";
+import React, { useContext, useState } from "react";
 import { googleLogo } from "../../assets";
 import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
+import { UserContext } from "../../context/UserContext";
 const Login = () => {
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm();
-  const onSubmit = (data) => {
-    console.log(data);
+  const { users, setIsUser } = useContext(UserContext);
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const user = users.find(
+      (user) => user.email === email && user.password === password
+    );
+    if (user) {
+      setIsUser(user.id);
+    } else {
+      alert("User Not Found");
+    }
   };
   return (
     <div className="w-[320px] mx-auto my-24 max-400:w-full max-600:my-12">
@@ -28,30 +35,22 @@ const Login = () => {
         <span className="text-medium-12 text-primary">OR</span>
         <div className="w-full h-[1px] bg-[#E6E7E8]"></div>
       </div>
-      <form className="flex flex-col">
+      <form onSubmit={handleSubmit} className="flex flex-col">
         <label className="flex flex-col text-medium-14 text-primary leading-5">
           Email
           <input
             type="email"
             className="border border-[#E6E7E8] h-11 p-2"
-            {...register("email", {
-              required: "Email is required",
-              pattern: {
-                value: /^\S+@\S+$/i,
-                message: "Enter a valid email address",
-              },
-            })}
+            onClick={(e) => setEmail(e.target.value)}
           />
-          {errors.email && (
-            <p className="text-red-500 text-sm">{errors.email.message}</p>
-          )}
         </label>
         <label className="flex flex-col text-medium-14 text-primary leading-5 mt-4">
           Password
-          <input type="password" className="border border-[#E6E7E8] h-11 p-2" />
-          {errors.email && (
-            <p className="text-red-500 text-sm">{errors.email.message}</p>
-          )}
+          <input
+            type="password"
+            className="border border-[#E6E7E8] h-11 p-2"
+            onClick={(e) => setPassword(e.target.value)}
+          />
         </label>
         <div className="text-right mt-4">
           <Link className="text-medium-12 text-primary" to="/forgot">

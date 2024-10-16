@@ -1,8 +1,10 @@
 import React, { useContext, useState } from "react";
 import { googleLogo } from "../../assets";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { UserContext } from "../../context/UserContext";
+
 const SignUp = () => {
+  const navigate = useNavigate();
   const { users, setUsers } = useContext(UserContext);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -10,6 +12,7 @@ const SignUp = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const newUser = {
+      id: Date.now(),
       name: name,
       email: email,
       password: password,
@@ -18,10 +21,10 @@ const SignUp = () => {
     storedUsers.push(newUser);
     localStorage.setItem("users", JSON.stringify(storedUsers));
     setUsers([...users, newUser]);
-    console.log(users);
     setName("");
     setEmail("");
     setPassword("");
+    navigate("/login");
   };
   return (
     <div className="w-[320px] mx-auto  max-400:w-full ">

@@ -1,12 +1,14 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { logoImg } from "../../assets";
 import { Link } from "react-router-dom";
 import Button from "./ButtonLarge";
 import MobileMenu from "./MobileMenu";
 import LangOptions from "./LangOptions";
+import UserPopUp from "./UserPopUp";
+import { UserContext } from "../../context/UserContext";
 const Header = () => {
+  const { isUser, userData } = useContext(UserContext);
   const [showNav, setShowNav] = useState(false);
-
   return (
     <header className="h-[100px] flex items-center ">
       <div className="flex justify-between items-center container">
@@ -42,7 +44,12 @@ const Header = () => {
           </nav>
         </div>
         <div className="flex items-center  max-850:hidden">
-          <Button title="Join the community" variant="default" />
+          {isUser === null ? (
+            <Button title="Join the community" variant="default" />
+          ) : (
+            <p>{userData.name}</p>
+          )}
+          {isUser !== null && <UserPopUp />}
           <div>
             <LangOptions />
           </div>

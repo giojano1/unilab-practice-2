@@ -7,11 +7,16 @@ export const UserProvider = ({ children }) => {
   });
   const [isUser, setIsUser] = useState(() => {
     const storedIsUser = localStorage.getItem("isUser");
-    return storedIsUser ? JSON.parse(storedIsUser) : false;
+    return storedIsUser ? JSON.parse(storedIsUser) : null;
   });
+  const [userData, setUserData] = useState([]);
   useEffect(() => {
     localStorage.setItem("users", JSON.stringify(users));
     localStorage.setItem("isUser", JSON.stringify(isUser));
+    if (isUser !== null) {
+      const loggedInUser = users.find((user) => user.id === isUser);
+      setUserData(loggedInUser);
+    }
   }, [users, isUser]);
   return (
     <UserContext.Provider
@@ -20,6 +25,7 @@ export const UserProvider = ({ children }) => {
         setUsers,
         isUser,
         setIsUser,
+        userData,
       }}
     >
       {children}
