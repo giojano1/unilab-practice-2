@@ -1,8 +1,16 @@
-import React, { useState } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import { dogImg } from "../../assets";
+import { UserContext } from "../../context/UserContext";
+
 const ChatBox = () => {
-  const [chatInfo, setChatInfo] = useState([]);
+  const { userData, updateUserChatInfo } = useContext(UserContext);
+  const [chatInfo, setChatInfo] = useState(userData?.chatInfo || []);
   const [question, setQuestion] = useState("");
+  useEffect(() => {
+    if (userData?.chatInfo !== chatInfo) {
+      updateUserChatInfo(chatInfo);
+    }
+  }, [chatInfo, updateUserChatInfo]);
   const handleAddQuestion = () => {
     if (question.trim() !== "") {
       setChatInfo((prev) => [...prev, { desc: question }]);
@@ -12,7 +20,7 @@ const ChatBox = () => {
   return (
     <div className="mt-10">
       <div className="mb-10">
-        <div className="w-[400px] mt-5">
+        <div className="w-[400px] mt-5 max-500:w-full">
           <p className="bg-primary p-4 text-white text-regular-14 rounded-xl rounded-bl-none leading-5 ml-7 mb-[1px]">
             Rapidly build stunning Web Apps with Frest 🚀 Developer friendly,
             Highly customizable & Carefully crafted HTML Admin Dashboard
@@ -26,7 +34,7 @@ const ChatBox = () => {
             />
           </div>
         </div>
-        <div className="w-[400px] ml-auto mt-5">
+        <div className="w-[400px] ml-auto mt-5 max-500:w-full">
           <p className="bg-[#F7DBA7] p-4 text-black text-regular-14 rounded-xl rounded-br-none leading-5 mr-7 mb-[1px]">
             Rapidly build stunning Web Apps with Frest 🚀 Developer friendly,
             Highly customizable & Carefully crafted HTML Admin Dashboard
@@ -36,12 +44,12 @@ const ChatBox = () => {
         {chatInfo.length > 0 &&
           chatInfo.map((box) => (
             <div key={box.desc}>
-              <div className="w-[400px] ml-auto mt-5">
+              <div className="w-[400px] ml-auto mt-5 max-500:w-full">
                 <p className="bg-[#F7DBA7] p-4 text-black text-regular-14 rounded-xl rounded-br-none leading-5 mr-7 mb-[1px]">
                   {box.desc}
                 </p>
               </div>
-              <div className="w-[400px] mt-5">
+              <div className="w-[400px] mt-5 max-500:w-full">
                 <p className="bg-primary p-4 text-white text-regular-14 rounded-xl rounded-bl-none leading-5 ml-7 mb-[1px]">
                   For more info please contact us with Email
                 </p>
