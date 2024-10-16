@@ -8,9 +8,9 @@ import UserPopUp from "./UserPopUp";
 import { UserContext } from "../../context/UserContext";
 const Header = () => {
   const navigate = useNavigate();
-  const { isUser, userData } = useContext(UserContext);
+  const { isUser, userData, showUserNav, setShowUserNav } =
+    useContext(UserContext);
   const [showNav, setShowNav] = useState(false);
-  const [showUserNav, setShowUserNav] = useState(false);
   const handleRedirect = () => [navigate("/login")];
   return (
     <header className="h-[100px] flex items-center ">

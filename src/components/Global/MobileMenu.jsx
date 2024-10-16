@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import Button from "./ButtonLarge";
 import LangOptions from "./LangOptions";
 import { logoImg } from "../../assets";
-
+import { UserContext } from "../../context/UserContext";
+import UserPopUp from "./UserPopUp";
 const MobileMenu = ({ setShowNav }) => {
+  const { isUser, userData, showUserNav, setShowUserNav } =
+    useContext(UserContext);
+
   return (
     <section className="bg-[#00000060] w-full h-full fixed left-0 top-0 flex items-start justify-center px-4 py-10">
       <div className="bg-white relative w-full rounded-2xl px-4 py-10 flex flex-col justify-center items-center">
@@ -27,9 +31,23 @@ const MobileMenu = ({ setShowNav }) => {
             </li>
           </ul>
         </nav>
-        <div className="my-6">
-          <Button title="Join the community" variant="default" />
+        <div className="relative my-6">
+          {isUser === null ? (
+            <Button
+              title="Join the community"
+              variant="default"
+              func={handleRedirect}
+            />
+          ) : (
+            <>
+              <button onClick={() => setShowUserNav((prev) => !prev)}>
+                {userData.name}
+              </button>
+              {showUserNav && <UserPopUp data={userData} />}
+            </>
+          )}
         </div>
+
         <div>
           <LangOptions />
         </div>

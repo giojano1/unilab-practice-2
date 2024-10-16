@@ -4,7 +4,7 @@ import { UserContext } from "../../context/UserContext";
 const UserPopUp = ({ data }) => {
   const { handleLogOut } = useContext(UserContext);
   return (
-    <div className="absolute top-10  bg-white shadow w-[200px] p-4 rounded-xl right-0 flex flex-col">
+    <div className="absolute top-10 z-20  bg-white shadow w-[200px] p-4 rounded-xl right-0 flex flex-col">
       <h3 className="text-regular-16 text-primary">{data.name}</h3>
       <div className="w-full h-[1px] bg-primary my-4"></div>
       <div className=" flex flex-col gap-3">

@@ -3,8 +3,14 @@ import ButtonLarge from "../Global/ButtonLarge";
 import DogGrid from "../Global/DogGrid";
 import { DogShopContext } from "../../context/DogShopContext";
 import { arrowDownIcon } from "../../assets";
+import { useNavigate } from "react-router-dom";
+
 const DogList = () => {
   const { data } = useContext(DogShopContext);
+  const navigate = useNavigate();
+  const handleNavigate = () => {
+    navigate("/category");
+  };
   return (
     <div>
       <div
@@ -20,7 +26,11 @@ const DogList = () => {
           </h2>
         </div>
         <div className="max-700:hidden">
-          <ButtonLarge title="View More" variant="outline">
+          <ButtonLarge
+            func={handleNavigate}
+            title="View More"
+            variant="outline"
+          >
             <img
               src={arrowDownIcon}
               alt="arrow down"
@@ -33,7 +43,12 @@ const DogList = () => {
         <DogGrid data={data} limit={8} />
       </div>
       <div className="hidden max-700:block w-full">
-        <ButtonLarge title="View More" variant="outline" width="full">
+        <ButtonLarge
+          func={handleNavigate}
+          title="View More"
+          variant="outline"
+          width="full"
+        >
           <img
             src={arrowDownIcon}
             alt="arrow down"

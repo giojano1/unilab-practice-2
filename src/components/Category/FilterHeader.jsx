@@ -24,7 +24,7 @@ const FilterHeader = () => {
           <span>{data.length} puppies</span>
         </div>
         <div className=" flex  items-center justify-between max-700:w-full ">
-          <div className=" min-w-[160px]">
+          <div className=" min-w-[160px] relative">
             <ButtonLarge
               title={option}
               variant="outline"
@@ -34,7 +34,7 @@ const FilterHeader = () => {
               <img src={arrowDownIcon} alt="arrow down" />
             </ButtonLarge>
             {showFilter && (
-              <div className="absolute bg-white w-full text-medium-14 border p-4 text-neutral60 shadow">
+              <div className="absolute bg-white w-full text-medium-14 border p-4 text-neutral60 shadow flex flex-col">
                 <button
                   onClick={() =>
                     handleSort("priceLowToHigh", "Price : Low to High")
