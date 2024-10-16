@@ -1,6 +1,7 @@
 import React, { useContext, useEffect } from "react";
-import { useParams, Link } from "react-router-dom";
+import { useParams, Link, useNavigate } from "react-router-dom";
 import { DogShopContext } from "../../context/DogShopContext";
+import { UserContext } from "../../context/UserContext";
 import {
   arrowDownIcon,
   chatIcon,
@@ -11,7 +12,9 @@ import {
 import { socialLinks } from "../../constans/index";
 import ButtonLarge from "../Global/ButtonLarge";
 const Details = () => {
+  const navigate = useNavigate();
   const { data, loading } = useContext(DogShopContext);
+  const { isUser } = useContext(UserContext);
   const { id } = useParams();
   if (loading) return <p>loading</p>;
   const pageData = data[id];
@@ -65,7 +68,13 @@ const Details = () => {
       value: pageData.additionalInfo,
     },
   ];
-
+  const handleRedirect = () => {
+    if (isUser) {
+      return navigate("/chat");
+    } else {
+      return navigate("/login");
+    }
+  };
   return (
     <div className="border border-neutral10 rounded-[20px] p-[22px] flex justify-between  max-800:flex-col max-700:p-2.5">
       <div className="w-[560px] max-1100:w-[500px] max-950:w-[400px] max-900:w-full">
@@ -157,7 +166,7 @@ const Details = () => {
           <ButtonLarge>
             <span className="text-medium-14">Contact Us</span>
           </ButtonLarge>
-          <ButtonLarge variant="outline" icon="l">
+          <ButtonLarge variant="outline" icon="l" func={handleRedirect}>
             <span className="text-medium-14  max-850:text-[13px]">
               Chat with Monito
             </span>
