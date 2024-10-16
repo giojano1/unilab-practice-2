@@ -1,0 +1,26 @@
+{!box.user ? (
+<div className="w-[400px] mt-5">
+  <p
+    className="bg-primary p-4 text-white text-regular-14 rounded-xl rounded-bl-none leading-5 ml-7 mb-[1px]"
+  >
+    {box.desc}
+  </p>
+  <div
+    className="w-16 h-16 bg-primary rounded-full flex items-center justify-center"
+  >
+    <img
+      src="{dogImg}"
+      alt="dog"
+      className="w-12 h-12 object-cover rounded-full"
+    />
+  </div>
+</div>
+) : (
+<div className="w-[400px] ml-auto mt-5">
+  <p
+    className="bg-[#F7DBA7] p-4 text-black text-regular-14 rounded-xl rounded-br-none leading-5 mr-7 mb-[1px]"
+  >
+    {box.desc}
+  </p>
+</div>
+)}

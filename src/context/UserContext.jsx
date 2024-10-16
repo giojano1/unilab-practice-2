@@ -9,7 +9,11 @@ export const UserProvider = ({ children }) => {
     const storedIsUser = localStorage.getItem("isUser");
     return storedIsUser ? JSON.parse(storedIsUser) : null;
   });
-  const [userData, setUserData] = useState([]);
+  const [userData, setUserData] = useState(() => {
+    const loggedInUser = users.find((user) => user.id === isUser);
+    return loggedInUser || {};
+  });
+
   useEffect(() => {
     localStorage.setItem("users", JSON.stringify(users));
     localStorage.setItem("isUser", JSON.stringify(isUser));
@@ -18,6 +22,14 @@ export const UserProvider = ({ children }) => {
       setUserData(loggedInUser);
     }
   }, [users, isUser]);
+
+  const updateUserChatInfo = (newChatInfo) => {
+    const updatedUsers = users.map((user) =>
+      user.id === isUser ? { ...user, chatInfo: newChatInfo } : user
+    );
+    setUsers(updatedUsers);
+  };
+
   const handleLogOut = () => {
     setIsUser(null);
     window.location.reload();
@@ -31,6 +43,7 @@ export const UserProvider = ({ children }) => {
         setIsUser,
         userData,
         handleLogOut,
+        updateUserChatInfo,
       }}
     >
       {children}

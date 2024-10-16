@@ -21,3 +21,4 @@ export { default as mapImg } from "/assets/images/map.png";
 export { default as phoneIcon } from "/assets/icons/phone.svg";
 export { default as faxIcon } from "/assets/icons/fax.svg";
 export { default as emailIcon } from "/assets/icons/email.svg";
+export { default as dogImg } from "/assets/dogs/8.png";
