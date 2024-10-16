@@ -3,7 +3,9 @@ import { googleLogo } from "../../assets";
 import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { UserContext } from "../../context/UserContext";
+import { useNavigate } from "react-router-dom";
 const Login = () => {
+  const navigate = useNavigate();
   const { users, setIsUser } = useContext(UserContext);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -14,6 +16,7 @@ const Login = () => {
     );
     if (user) {
       setIsUser(user.id);
+      navigate("/");
     } else {
       alert("User Not Found");
     }

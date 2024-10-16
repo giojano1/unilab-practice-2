@@ -15,3 +15,5 @@ export { default as shareIcon } from "/assets/icons/share.svg";
 export { default as dogdetIcon } from "/assets/images/dogdet1.png";
 export { default as dogdet2Icon } from "/assets/images/dogdet2.png";
 export { default as googleLogo } from "/assets/images/google.png";
+export { default as userIcon } from "/assets/icons/user.svg";
+export { default as logOutIcon } from "/assets/icons/log-out.svg";

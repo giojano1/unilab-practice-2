@@ -1,14 +1,17 @@
 import React, { useContext, useState } from "react";
 import { logoImg } from "../../assets";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Button from "./ButtonLarge";
 import MobileMenu from "./MobileMenu";
 import LangOptions from "./LangOptions";
 import UserPopUp from "./UserPopUp";
 import { UserContext } from "../../context/UserContext";
 const Header = () => {
+  const navigate = useNavigate();
   const { isUser, userData } = useContext(UserContext);
   const [showNav, setShowNav] = useState(false);
+  const [showUserNav, setShowUserNav] = useState(false);
+  const handleRedirect = () => [navigate("/login")];
   return (
     <header className="h-[100px] flex items-center ">
       <div className="flex justify-between items-center container">
@@ -43,13 +46,23 @@ const Header = () => {
             </ul>
           </nav>
         </div>
-        <div className="flex items-center  max-850:hidden">
-          {isUser === null ? (
-            <Button title="Join the community" variant="default" />
-          ) : (
-            <p>{userData.name}</p>
-          )}
-          {isUser !== null && <UserPopUp />}
+        <div className="flex items-center  max-850:hidden ">
+          <div className="relative">
+            {isUser === null ? (
+              <Button
+                title="Join the community"
+                variant="default"
+                func={handleRedirect}
+              />
+            ) : (
+              <>
+                <button onClick={() => setShowUserNav((prev) => !prev)}>
+                  {userData.name}
+                </button>
+                {showUserNav && <UserPopUp data={userData} />}
+              </>
+            )}
+          </div>
           <div>
             <LangOptions />
           </div>

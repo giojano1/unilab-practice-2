@@ -18,6 +18,10 @@ export const UserProvider = ({ children }) => {
       setUserData(loggedInUser);
     }
   }, [users, isUser]);
+  const handleLogOut = () => {
+    setIsUser(null);
+    window.location.reload();
+  };
   return (
     <UserContext.Provider
       value={{
@@ -26,6 +30,7 @@ export const UserProvider = ({ children }) => {
         isUser,
         setIsUser,
         userData,
+        handleLogOut,
       }}
     >
       {children}
