@@ -44,7 +44,7 @@ const Login = () => {
           <input
             type="email"
             className="border border-[#E6E7E8] h-11 p-2"
-            onClick={(e) => setEmail(e.target.value)}
+            onChange={(e) => setEmail(e.target.value)}
           />
         </label>
         <label className="flex flex-col text-medium-14 text-primary leading-5 mt-4">
@@ -52,7 +52,7 @@ const Login = () => {
           <input
             type="password"
             className="border border-[#E6E7E8] h-11 p-2"
-            onClick={(e) => setPassword(e.target.value)}
+            onChange={(e) => setPassword(e.target.value)}
           />
         </label>
         <div className="text-right mt-4">
