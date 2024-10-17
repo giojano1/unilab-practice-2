@@ -10,7 +10,7 @@ import Footer from "../components/Global/Footer";
 
 const Home = () => {
   const { data, loading, error } = useContext(DogShopContext);
-  const targetDate = "2024-10-31T23:59:59";
+  const targetDate = "2024-11-31T23:59:59";
   return (
     <>
       <div className="bg">
