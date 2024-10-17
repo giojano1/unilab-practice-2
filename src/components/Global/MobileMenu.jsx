@@ -1,14 +1,18 @@
 import React, { useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Button from "./ButtonLarge";
 import LangOptions from "./LangOptions";
 import { logoImg } from "../../assets";
 import { UserContext } from "../../context/UserContext";
 import UserPopUp from "./UserPopUp";
 const MobileMenu = ({ setShowNav }) => {
+  const navigate = useNavigate();
   const { isUser, userData, showUserNav, setShowUserNav } =
     useContext(UserContext);
-
+  const handleRedirect = () => {
+    setShowNav(false);
+    navigate("/login");
+  };
   return (
     <section className="bg-[#00000060] w-full h-full fixed left-0 top-0 flex items-start justify-center px-4 py-10">
       <div className="bg-white relative w-full rounded-2xl px-4 py-10 flex flex-col justify-center items-center">
