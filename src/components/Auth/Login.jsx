@@ -7,12 +7,15 @@ import { useNavigate } from "react-router-dom";
 const Login = () => {
   const navigate = useNavigate();
   const { users, setIsUser } = useContext(UserContext);
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
+
+  const onSubmit = (data) => {
     const user = users.find(
-      (user) => user.email === email && user.password === password
+      (user) => user.email === data.email && user.password === data.password
     );
     if (user) {
       setIsUser(user.id);
@@ -38,22 +41,34 @@ const Login = () => {
         <span className="text-medium-12 text-primary">OR</span>
         <div className="w-full h-[1px] bg-[#E6E7E8]"></div>
       </div>
-      <form onSubmit={handleSubmit} className="flex flex-col">
+      <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col">
         <label className="flex flex-col text-medium-14 text-primary leading-5">
           Email
           <input
             type="email"
             className="border border-[#E6E7E8] h-11 p-2"
-            onChange={(e) => setEmail(e.target.value)}
+            {...register("email", {
+              required: "Email is required",
+              pattern: {
+                value: /^[^@ ]+@[^@ ]+\.[^@ .]{2,}$/,
+                message: "Email is not valid",
+              },
+            })}
           />
+          {errors.email && (
+            <span className="text-red-600">{errors.email.message}</span>
+          )}
         </label>
         <label className="flex flex-col text-medium-14 text-primary leading-5 mt-4">
           Password
           <input
             type="password"
             className="border border-[#E6E7E8] h-11 p-2"
-            onChange={(e) => setPassword(e.target.value)}
+            {...register("password", { required: "Password is required" })}
           />
+          {errors.password && (
+            <span className="text-red-600">{errors.password.message}</span>
+          )}
         </label>
         <div className="text-right mt-4">
           <Link className="text-medium-12 text-primary" to="/forgot">
