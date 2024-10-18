@@ -1,16 +1,22 @@
-import React, { useContext } from "react";
+import React from "react";
 import Header from "../components/Global/Header";
 import Hero from "../components/Home/Hero";
 import DogList from "../components/Home/DogList";
 import Adv from "../components/Home/Adv";
-
 import InfoSlider from "../components/Home/InfoSlider";
 import Countdown from "../components/Home/Countdown";
 import Footer from "../components/Global/Footer";
-
+import { Helmet } from "react-helmet-async";
 const Home = () => {
   return (
     <>
+      <Helmet>
+        <title>Monito</title>
+        <meta
+          name="description"
+          content="Monito Dog Shop offers a wide range of premium dog products and accessories for your furry friend. Shop dog food, toys, grooming essentials, and more."
+        />
+      </Helmet>
       <div className="bg">
         <div className="bg-hero bg-cover max-w-[1440px] mx-auto w-full  max-h-[700px] max-800:max-h-max ">
           <Header />
