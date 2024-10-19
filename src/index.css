@@ -3,7 +3,7 @@
 @tailwind utilities;
 #root {
   line-height: 1;
-  @apply bg-neutral00 flex flex-col justify-between min-h-screen;
+  @apply bg-neutral00 antialiased font-regular flex flex-col justify-between min-h-screen;
 }
 .container {
   @apply max-w-[1200px] mx-auto w-full px-5 max-500:px-4;
@@ -32,9 +32,6 @@
 }
 
 @layer base {
-  html {
-    font-family: "regularSans", sans-serif;
-  }
   @font-face {
     font-family: "regularSans";
     src: url("/fonts/SFPRODISPLAYREGULAR.OTF") format("opentype");
@@ -47,4 +44,84 @@
     font-family: "mediumSans";
     src: url("/fonts/SFPRODISPLAYMEDIUM.OTF") format("opentype");
   }
+}
+.text-bold-36 {
+  @apply font-bold;
+}
+.text-semibold-36 {
+  @apply font-medium;
+}
+.text-regular-28 {
+  @apply font-regular;
+}
+.text-bold-28 {
+  @apply font-bold;
+}
+.text-medium-28 {
+  @apply font-medium;
+}
+.text-regular-24 {
+  @apply font-regular;
+}
+.text-bold-24 {
+  @apply font-bold;
+}
+.text-semibold-24 {
+  @apply font-medium;
+}
+.text-bold-20 {
+  @apply font-bold;
+}
+.text-medium-20 {
+  @apply font-medium;
+}
+.text-regular-20 {
+  @apply font-regular;
+}
+.text-regular-16 {
+  @apply font-regular;
+}
+.text-medium-16 {
+  @apply font-medium;
+}
+.text-bold-16 {
+  @apply font-bold;
+}
+.text-regular-14 {
+  @apply font-regular;
+}
+.text-medium-14 {
+  @apply font-medium;
+}
+.text-bold-14 {
+  @apply font-bold;
+}
+
+.text-regular-12 {
+  @apply font-regular;
+}
+.text-medium-12 {
+  @apply font-medium;
+}
+.text-bold-12 {
+  @apply font-bold;
+}
+.text-regular-10 {
+  @apply font-regular;
+}
+
+.text-medium-10 {
+  @apply font-medium;
+}
+.text-bold-10 {
+  @apply font-bold;
+}
+.text-regular-8 {
+  @apply font-regular;
+}
+.text-medium-8 {
+  @apply font-medium;
+}
+.text-bold-8 {
+  @apply font-bold;
 }
