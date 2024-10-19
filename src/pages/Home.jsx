@@ -16,7 +16,7 @@ const Home = () => {
           <Hero />
         </div>
       </div>
-      <main className="container">
+      <main className="container ">
         <section className="my-16 max-700:my-10">
           <DogList />
         </section>

@@ -10,7 +10,7 @@ const Hero = () => {
     navigate("/category");
   };
   return (
-    <section className="flex items-center justify-between container my-10 max-800:flex-col max-800:my-5 max-650:my-3">
+    <section className="flex items-center justify-between container mt-10 max-800:flex-col max-800:mt-5 max-650:mt-3">
       <div className="flex-1">
         <div>
           <h2 className="text-[50px] font-bold text-primary  leading-[65px] max-900:text-[40px] max-900:leading-[50px]">
